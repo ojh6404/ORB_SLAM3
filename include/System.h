@@ -140,6 +140,9 @@ public:
     void Shutdown();
     bool isShutDown();
 
+    // get camera trajectory
+    std::vector<Eigen::Matrix4f> GetCameraTrajectory();
+
     // Save camera trajectory in the TUM RGB-D dataset format.
     // Only for stereo and RGB-D. This method does not work for monocular.
     // Call first Shutdown()
